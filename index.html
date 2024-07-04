@@ -9,7 +9,7 @@
 </head>
 <body class="bg-blue-900 text-white">
     <!-- header section start -->
-    <header class="flex px-4 justify-between items-center h-[50px] mt-3">
+    <header class="flex px-4 justify-between items-center h-[50px] mt-3 sm:px-8 md:px-11 lg:px-16 xl:px-20 2xl:px-24">
         <div class="w-[50px] h-[50px] rounded-xl overflow-hidden">
             <img src="images/sajmul.png" alt="This is Sajmul's photo" class="object-cover h-full w-full">
         </div>
@@ -25,14 +25,14 @@
 
     
     <!-- main section start -->
-    <main class="px-4 py-5">
+    <main class="px-4 py-5 sm:px-8 md:px-11 lg:px-16 xl:px-20 2xl:px-24">
         <!-- introduction section start -->
-        <section>
-            <div>
+        <section class="md:flex md:justify-between md:gap-3">
+            <div class="md:w-1/2">
                 <img src="images/sajmul.png" alt="This is Sajmul's photo" class="w-full rounded-lg">
             </div>
 
-            <div class="bg-violet-500 p-2 rounded-lg mt-1">
+            <div class="bg-violet-500 p-2 rounded-lg mt-1 md:w-1/2 md:flex md:justify-center md:flex-col">
                 <h2 class="font-bold text-3xl text-center mt-3">Sajmul Hossain</h2>
                 <p class="text-center">I'm a frontend web developer.</p>
                 <p class="text-center">From Chattogram, Bangladesh.</p>
@@ -45,15 +45,15 @@
         <section class="mt-5">
             <h2 class="text-center text-3xl font-bold underline underline-offset-8 mb-4">My experience</h2>
 
-            <div class="flex flex-col gap-8">
-                <div>
+            <div class="flex flex-col gap-8 md:grid md:grid-cols-12 md:grid-flow-row">
+                <div class="md:col-span-6 xl:col-span-4">
                     <div class="rounded-t-lg overflow-hidden">
                         <img src="images/html.png" class="w-full" alt="This is a logo image of html">
                     </div>
                     <h3 class="text-5xl py-2 font-bold bg-green-300 text-center">HTML</h3>
                     <p class="bg-blue-400 mt-1 rounded-b-lg p-2 text-center text-emerald-50">I'm experienced in <span class="uppercase text-green-300 font-bold">Html</span> since 2020</p>
                 </div>
-                <div>
+                <div class="md:col-span-6 xl:col-span-4">
                     <div class="rounded-t-lg overflow-hidden">
                         <img src="images/css.jpg" class="w-full" alt="This is a logo image of css">
                     </div>
@@ -61,7 +61,7 @@
                     <p class="bg-blue-400 mt-1 p-2 text-center text-emerald-50">I'm experienced in <span class="uppercase text-green-300 font-bold">css</span> since 2020</p>
                     <p class="mt-1 p-2 text-center bg-violet-500 text-white rounded-b-lg">I'm also well know in CSS framework or library. Like Tailwind CSS and Bootstrap</p>
                 </div>
-                <div>
+                <div class="md:col-span-6 xl:col-span-4">
                     <div class="rounded-t-lg overflow-hidden">
                         <img src="images/js.png" class="w-full" alt="This is a logo image of javascript">
                     </div>
@@ -75,7 +75,7 @@
         <!-- skill section start -->
          <section>
             <h2 class="text-center font-bold text-3xl mt-5 underline underline-offset-8">My skills</h2>
-            <div>
+            <div class="xl:w-4/6 mx-auto">
                 <ul class="text-center mt-5">
                     <li class="bg-violet-500 my-1 py-3 rounded-xl shadow-xl text-white font-bold">HTML5</li>
                     <!-- <li class="bg-violet-500 my-1 py-3 rounded-xl shadow-xl text-white font-bold">CSS3 -->
@@ -99,8 +99,8 @@
          <section class="mt-5">
             <h2 class="text-center font-bold underline underline-offset-8 text-3xl mb-4">My Projects</h2>
 
-            <section class="flex flex-col gap-5">
-                <div>
+            <section class="flex flex-col gap-5 xl:grid xl:grid-cols-12">
+                <div class="xl:col-span-6 2xl:col-span-4">
                     <div class="rounded-t-lg overflow-hidden">
                         <img src="images/ass-1.png" class="w-full" alt="This is a portfolio example image">
                     </div>
@@ -111,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="xl:col-span-6 2xl:col-span-4">
                     <div class="rounded-t-lg overflow-hidden">
                         <img src="images/ass-2.png" class="w-full" alt="This is a resturant website example image">
                     </div>
@@ -122,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="xl:col-span-6 2xl:col-span-4">
                     <div class="rounded-t-lg overflow-hidden">
                         <img src="images/donate.png" class="w-full" alt="This is a donation website example image">
                     </div>
@@ -141,9 +141,9 @@
     <!-- main section end -->
 
     <!-- footer section start -->
-     <footer class="bg-black px-4">
+     <footer class="bg-black px-4 sm:px-8 md:px-11 lg:px-16 xl:px-20 2xl:px-24">
         <section class="border-b-2 border-white py-5">
-            <div class="font-bold text-xl w-[70%] mx-auto">
+            <div class="font-bold text-xl flex flex-col items-center">
                 <p><i class="fa-solid fa-mobile"></i> +88016-01427-140</p>
                 <p><i class="fa-solid fa-envelope"></i> sajmul1427@gmail.com</p>
                 <div class="flex gap-5 mt-3">
