@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style/style.css">
 </head>
-<body class="min-w-[300px] max-w-[500px] mx-auto text-white">
-    <!-- header section start -->
+<body class="min-w-[300px] max-w-screen-xl mx-auto text-white">
     <header class="bg-blue-900 flex px-4 justify-between items-center py-3 sm:px-8 md:px-11 lg:px-16 xl:px-20 2xl:px-24">
         <div class="w-[50px] h-[50px] rounded-xl overflow-hidden">
             <img src="../images/sajmul.png" alt="This is Sajmul's photo" class="object-cover h-full w-full">
@@ -16,7 +15,7 @@
         <nav class="w-5/6 bg-green-500 rounded-bl-3xl h-full overflow-hidden">
             <ul class="flex justify-around items-center h-full">
                 <li><a class="text-black hover:bg-black hover:text-white inline-block px-3 py-3" href="../index.html">Home</a></li>
-                <li><a class="text-black hover:bg-black hover:text-white inline-block px-3 py-3" href="#">About Me</a></li>
+                <li><a class="text-black hover:bg-black hover:text-white inline-block px-3 py-3" href="../about/about.html">About Me</a></li>
                 <li><a class="text-black hover:bg-black hover:text-white inline-block px-3 py-3" href="assets/resume.html">Download CV</a></li>
             </ul>
         </nav>
@@ -24,8 +23,8 @@
     <!-- header section end -->
 
     <!--main section start -->
-    <main class="my-5 h-screen px-4 sm:px-8 md:px-11 lg:px-16 xl:px-20 2xl:px-24">
-        <iframe class="w-full h-full" src="resume.pdf" frameborder="0"></iframe>
+    <main class="my-5 h-screen px-4">
+        <iframe class="w-full h-full rounded-lg" src="resume.pdf" frameborder="0"></iframe>
     </main>
     <!--main section end -->
 
@@ -45,10 +44,13 @@
             </div>
         </section>
         <section class="py-3">
-            <p class="text-center">All rights reserved to <span class="font-bold">Sajmul</span>. &copy; Copyright 2024</p>
+            <p class="text-center">All rights reserved to <span class="font-bold">Sajmul</span>. &copy; Copyright <span id="copy-year"></span></p>
         </section>
      </footer>
     <!-- footer section end -->
     
+
+
+    <script src="../script/index.js"></script>
 </body>
 </html>
