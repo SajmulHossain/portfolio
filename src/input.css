@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+  --text: #04071c;
+  --background: #f7f8fe;
+  --primary: #2633e0;
+  --secondary: #a57eed;
+  --accent: #9a5ae8;
+  }
+  .dark {
+  --text: #e4e7fb;
+  --background: #010209;
+  --primary: #1f2cdb;
+  --secondary: #391282;
+  --accent: #5717a6;
+  }
+  }
+
+
+  @layer components {
+    .btn {
+      @apply text-text bg-gray-200 font-medium px-4 py-2 rounded-md duration-200 ;
+    }
+
+    .active {
+      @apply font-bold text-primary;
+    }
+  }
