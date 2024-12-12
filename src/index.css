@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --text: #04071c;
+    --background: #fbfcf8;
+    --primary: #2633e0;
+    --secondary: #2aed3d;
+    --accent: #9a5ae8;
+  }
+  :root[data-theme="dark"] {
+    --text: #e4e7fb;
+    --background: #060703;
+    --primary: #1f2cdb;
+    --secondary: #12d326;
+    --accent: #5717a6;
+  }
+}
+
+@layer base {
+  body {
+    @apply dark:bg-black;
+    overflow-y: scroll;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply text-text bg-gray-200 font-medium px-4 py-2 rounded-md duration-200 hover:ring-1 hover:ring-offset-2 hover:ring-accent;
+  }
+}
+
+@layer utilities {
+  .active {
+    @apply text-primary;
+  }
+
+  .description {
+    color: rgba(var(--text), 0.5);
+  }
+
+  body {
+    @apply bg-background;
+  }
+}
