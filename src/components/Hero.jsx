@@ -23,8 +23,9 @@ const Hero = () => {
           <button className="btn bg-gradient text-white">Hire Me</button>
         </div>
       </div>
-      <div className="lg:w-1/2 md:flex md:justify-center  lg:justify-end">
-        <img src={sajmulImg} className="rounded-lg md:h-[500px] lg:h-auto lg:w-4/6" alt="sajmul's images" />
+      <div className="lg:w-1/2 sm:flex sm:justify-center  lg:justify-end">
+        <img
+        src={sajmulImg} className="rounded-lg sm:h-[500px] lg:h-auto lg:w-4/6" alt="sajmul's images" />
       </div>
 
     </div>

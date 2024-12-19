@@ -23,20 +23,19 @@
 
 @layer base {
   body {
-    @apply dark:bg-black;
     overflow-y: scroll;
   }
 }
 
 @layer components {
   .btn {
-    @apply text-text bg-gray-200 font-medium px-4 py-2 rounded-md duration-200 hover:ring-1 hover:ring-offset-2 hover:ring-accent;
+    @apply text-text bg-gray-200 font-medium px-4 py-2 rounded-md duration-200 hover:ring-1 hover:ring-offset-2 hover:ring-accent hover:bg-inherit;
   }
 }
 
 @layer utilities {
   .active {
-    @apply text-primary;
+    @apply text-primary dark:text-secondary;
   }
 
   .description {
